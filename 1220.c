@@ -1,5 +1,7 @@
 #include <stdio.h>
- 
+ /*
+ commit
+*/
 int main() {
     
     float valor,total,menor,maior;
