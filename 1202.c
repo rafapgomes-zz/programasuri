@@ -27,25 +27,30 @@ int conversao(int n)
 
 int fibonnaci(int n)
 {
-    int ant=0,aux=1,prox=1;
+    int ant=0,aux=1,prox=1,ret;
     int cont=0;
     while(cont<n)
     {
-       printf("%d ",aux);
+       ret = aux;
        aux=ant+prox;
        ant=prox;
        prox=aux;
        cont = cont+1;
     }
-    return aux;
+    return ret;
 }
-
-
-
 int main()
 {
-    int aux,num,num2;
-    scanf("%d",&num);
-    num2 = conversao(num);
-    aux=fibonnaci(num2);
+    int aux,num,num2,cont,i=0;
+    scanf("%d",&cont);
+    for(int i=0; i<cont; i++)
+    {
+         scanf("%d",&num);
+         printf("%d",fibonnaci(conversao(num)));
+    
+    
+    }
+    
+            
+	
 }
