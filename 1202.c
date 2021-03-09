@@ -33,6 +33,7 @@ int fibonnaci(int n)
     {
        ret = aux;
        aux=ant+prox;
+       aux = aux%1000;
        ant=prox;
        prox=aux;
        cont = cont+1;
@@ -47,7 +48,7 @@ int main()
     {
          scanf("%d",&num);
          printf("%03d",fibonnaci(conversao(num)));
-    
+         printf("\n");
     
     }
     
