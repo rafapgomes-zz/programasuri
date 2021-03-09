@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/*
+ commit
+*/
 int potencia(int cont)
 {
     int num=1;
