@@ -46,7 +46,7 @@ int main()
     for(int i=0; i<cont; i++)
     {
          scanf("%d",&num);
-         printf("%d",fibonnaci(conversao(num)));
+         printf("%03d",fibonnaci(conversao(num)));
     
     
     }
