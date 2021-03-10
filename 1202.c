@@ -1,7 +1,4 @@
 #include <stdio.h>
-/*
- commit
-*/
 int potencia(int cont)
 {
     int num=1;
@@ -12,7 +9,7 @@ int potencia(int cont)
     return num;
 }
 
-int conversao(int n)
+int conversao(long long int n)
 {
     int num=0,cont=0;
     while(n!=0)
@@ -29,31 +26,36 @@ int conversao(int n)
 
 int fibonnaci(int n)
 {
-    int ant=0,aux=1,prox=1,ret;
+    int ant=0,aux=0,prox=1,ret;
     int cont=0;
-    while(cont<n)
-    {
-       ret = aux;
+    while(cont<n-1)
+    { 
        aux=ant+prox;
        aux = aux%1000;
        ant=prox;
        prox=aux;
        cont = cont+1;
     }
-    return ret;
+    return aux;
 }
 int main()
 {
-    int aux,num,num2,cont,i=0;
-    scanf("%d",&cont);
-    for(int i=0; i<cont; i++)
-    {
-         scanf("%d",&num);
-         printf("%03d",fibonnaci(conversao(num)));
-         printf("\n");
-    
-    }
+    int aux,num2,cont,i=0;
+    long long int num;
+
+      
+      scanf("%d",&cont);
+	for(int i=0;i<cont;i++)
+	{
+		
+	 	scanf("%lld",&num);
+ 		printf("%d",fibonnaci(conversao(num)));
+
+         	printf("\n");
+    	 
+       }
     
             
 	
 }
+
